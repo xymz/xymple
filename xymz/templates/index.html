@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block body %}
+  <script src="/static/js/ZeroClipboard.js"></script>
+  <script src="/static/js/main.js"></script>
+  <h2>XYMPLE <span style="font-size: 13pt;">(Make url simple)</span></h2>
+  {% if url:-%}
+    <p class="message">
+      <a href="{{ url }}">{{ url }}</a> was simplified as 
+      <a href="{{ simplified }}">{{ simplified }}</a>
+    </p>
+    <p class="clipboard">Copy to clipboard</p>
+  {%-endif %}
+  <form method="post" id="xymple">
+    <input type="text" name="url" size="30" value="http://" />
+    <label><input type="checkbox" name="private" />Private</label>
+    <button type="submit">xymplify!</button>
+  </form>
+  <hr style="margin-top:20px;"/>
+  <div>
+    By <a href="http://xym.kr/xym.html">xym</a>
+  </div>
+  <div>
+    <a href="javascript:location.href='http://xym.kr?url='+encodeURIComponent(location.href);" onclick="return false;"
+      >XYMPLE Bookmarklet</a> - Drag this to bookmark bar.
+        Then you can easily make a simple url.
+  </div>
+{% endblock %}

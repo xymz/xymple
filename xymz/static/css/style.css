@@ -1,0 +1,32 @@
+p, li, h1, h2, h3, h4, h5, h6, div, span, label, button { 
+  font-family: 'NanumGothic', "Arial";
+}
+p, table, hr, .box {
+  margin-bottom:25px;
+}
+.box p {
+  margin-bottom:10px;
+}
+div.container { 
+  margin-top: 30px;
+  margin-left: 20px;
+}
+div.embed {
+  margin-bottom: 5px;
+  width:160px;
+}
+p.message { 
+  background-color: #eee; 
+  padding: 3px; 
+  overflow:hidden;
+}
+p.clipboard { 
+  background-color: #eee; 
+  padding: 5px;
+}
+@font-face {
+  font-family: "NanumGothic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("NanumGothic"), url("http://asset2.me2day.net/stylesheets/NanumGothic.ttf") format("truetype"); 
+}

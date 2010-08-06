@@ -1,0 +1,6 @@
+import flask
+
+app = flask.Flask(__name__)
+DEBUG = True
+SECRET_KEY = "xymple is not only simple, also beautiful"
+app.config.from_object(__name__)
