@@ -1,0 +1,3 @@
+SQLAlchemy  ==0.6.3      sqlalchemy     http://www.sqlalchemy.org/
+Jinja2      ==2.5        jinja2         http://jinja.pocoo.org/2/
+Flask       ==0.6        flask          http://flask.pocoo.org/

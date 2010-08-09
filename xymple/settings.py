@@ -2,8 +2,4 @@ import flask
 
 app = flask.Flask(__name__)
 
-DEBUG = True
-SECRET_KEY = ""
-URL = ""
-
 app.config.from_object(__name__)
