@@ -10,3 +10,5 @@ INSTALLATION
 You have to initialize to use this program. Run below command.
 
 <code>python setup.py initialize</code>
+
+And copy CONFIG.dist file to CONFIG and set it up
