@@ -31,6 +31,12 @@ class initialize(distutils.cmd.Command):
         cmd.always_copy_from = "."
         cmd.args = list(required_packages())
         cmd.run()
+        print "creating database..."
+        import xymple.db.db
+        import xymple.db.models
+        xymple.db.db.init_db()
+        print "created"
+
 
 setup(name="xymple",
       packages=["xymple"],

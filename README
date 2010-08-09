@@ -1,0 +1,12 @@
+XYMPLE 
+====
+
+xymple is a simple url shortener. I made it for training python.
+
+
+INSTALLATION
+====
+
+You have to initialize to use this program. Run below command.
+
+<code>python setup.py initialize</code>

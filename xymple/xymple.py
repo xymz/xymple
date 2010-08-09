@@ -1,13 +1,8 @@
 import flask
 import db.db as db
 from db.models import Pair
-try:
-    from settings import app
-    from settings import URL
-except ImportError:
-    print "Copy settings.py.dist to settings.py and set it up."
-    import sys
-    sys.exit()
+from settings import app
+from settings import URL
 
 @app.route("/", methods=["GET", "POST"])
 def index():

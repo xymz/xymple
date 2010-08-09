@@ -1,4 +1,4 @@
 home.html
-settings.py
-xymple.db
+*.db
 *.pyc
+CONFIG
