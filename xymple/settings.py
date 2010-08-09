@@ -4,7 +4,11 @@ import os.path
 app = flask.Flask(__name__)
 
 directory = os.path.dirname(__file__)
-config = open(os.path.join(directory, "CONFIG"), "r")
+try:
+    config = open(os.path.join(directory, "CONFIG"), "r")
+except IOError:
+    raise SystemExit("Copy `xymple/CONFIG.dist` to `xymple/CONFIG` " 
+                     "and apply your own settings")
 DEBUG = config.readline()
 SECRET_KEY = config.readline()
 URL = config.readline()

@@ -1,5 +1,6 @@
 from setuptools import setup
 import distutils.cmd
+import os.path
 
 def required_packages():
     with open("REQUIREMENTS") as file:
