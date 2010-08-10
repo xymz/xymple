@@ -13,11 +13,11 @@ $(document).ready(function() {
       passcode.detach();
     }
   });
-  if ("{{ simplified }}".length) {
+  if ($(".result").length) {
     var clip = new ZeroClipboard.Client();
     clip.setHandCursor(true);
     ZeroClipboard.setMoviePath('/static/js/ZeroClipboard.swf');
-    clip.setText("{{ simplified }}");
+    clip.setText($(".result").text());
     clip.glue($("p.clipboard")[0]);
     clip.addEventListener('onComplete', function() {
       $("p.clipboard").hide().html("Copied!").fadeIn();
